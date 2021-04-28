@@ -379,16 +379,16 @@ pair< vector<GameState*>, int> searchAI(GameState* initial, GameState* final)
 
 			if (areEqual(newGame, final))
 			{
-				int countor = 0;
+				int counter = 0;
 
 				while (newGame->parent != nullptr)
 				{
 					solution.push_back(newGame);
 					newGame = newGame->parent;
-					countor++;
+					counter++;
 				}
 				solution.push_back(initial);
-				return make_pair(solution, countor);
+				return make_pair(solution, counter);
 			}
 
 			empty_positions = get_Pos(newGame);
