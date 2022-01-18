@@ -3,7 +3,7 @@ This C++ code from 2019 solves the x-puzzle problem. I wrote it in my first year
 
 ## Description
 ---
-This algorithm uses states(```GameState```) to verify if the current current puzzle is in final form or not. It firstly checks if the game is resolvable or not based on the information on this [site](http://kevingong.com/Math/SixteenPuzzle.html).
+This algorithm uses states(```GameState```) to verify if the current puzzle is in final form or not. It firstly checks if the game is solvable or not based on the information on this [site](http://kevingong.com/Math/SixteenPuzzle.html).
 
 If it is solveable, it searches for the best move set(the one with the lowest number of moves that reaches a *final state*) using _*A**_.
 
