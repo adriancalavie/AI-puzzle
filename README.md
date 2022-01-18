@@ -2,7 +2,7 @@
 This C++ code from 2019 solves the x-puzzle problem. I wrote it in my first year at University. 
 
 ## Description
----
+
 This algorithm uses states(```GameState```) to verify if the current puzzle is in final form or not. It firstly checks if the game is solvable or not based on the information on this [site](http://kevingong.com/Math/SixteenPuzzle.html).
 
 If it is solveable, it searches for the best move set(the one with the lowest number of moves that reaches a *final state*) using _*A**_.
@@ -28,7 +28,7 @@ A ```GameState``` is defined by the matrix and these fields:
 
 
 ## A* implementation
----
+
 [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) is an informed path search algorithm that uses a heuristic to guide it's path.
 
 This [site](https://www.redblobgames.com/pathfinding/a-star/introduction.html) presents and explains 3 path-finding algorithms, BFS, Dijkstra’s and A*. The conclusion to be taken is that:
